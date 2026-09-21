@@ -6,6 +6,7 @@ const LINKS = [
   { label: "Email", value: "nunalaebramjules@gmail.com", href: "mailto:nunalaebramjules@gmail.com" },
   { label: "GitHub", value: "github.com/nunalaebramjules", href: "https://github.com/" },
   { label: "LinkedIn", value: "linkedin.com/in/ejnunala", href: "https://linkedin.com/" },
+  { label: "Mobile Number", value: "09568241720/09933034584", href: "tel:+639568241720" },
 ];
 
 export default function Contact() {
