@@ -22,10 +22,10 @@ const GROUPS: Group[] = [
     title: "Application Development",
     note: "software & systems",
     skills: [
-      { name: "Java", level: 80 },
-      { name: "Python", level: 75 },
+      { name: "Dart & Flutter", level: 80 },
+      { name: "Javascript", level: 75 },
       { name: "MySQL / Database Design", level: 82 },
-      { name: "Git & Version Control", level: 85 },
+      { name: "Git & Version Control", level: 100 },
     ],
   },
   {
@@ -35,7 +35,7 @@ const GROUPS: Group[] = [
       { name: "PC Assembly & Diagnostics", level: 90 },
       { name: "OS Install & Configuration", level: 88 },
       { name: "Network Setup & Troubleshooting", level: 80 },
-      { name: "Peripheral & Driver Support", level: 85 },
+      { name: "Tech Support", level: 85 },
     ],
   },
 ];
