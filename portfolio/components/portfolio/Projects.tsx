@@ -82,7 +82,7 @@ export default function Projects() {
               <p className="mt-3 text-[14px] leading-6 text-[var(--muted)]">
                 {/* TODO: replace with the real project brief — what problem it solves
                    and what the client needed. */}
-                Alert Application that works like an alarm and send an alert notification to it's group.
+                Alert Application that works like an alarm and send an alert notification to it's group using a code to join in.
               </p>
               <ul className="mt-5 flex flex-wrap gap-2 font-mono text-[11px] text-[var(--muted)]">
                 {["Prototype", "UI/UX", "Client Project"].map((tag) => (
