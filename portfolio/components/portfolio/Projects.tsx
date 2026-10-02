@@ -71,21 +71,30 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Invite-to-add placeholder slots */}
-           <div className="relative z-10 flex flex-col justify-center p-8">
+          <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-[var(--line)] md:aspect-auto md:border-b-0 md:border-r">
+              <Image
+                src="/img/alert.png"
+                alt="Vengo application prototype screenshot"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+              />
+            </div>
+
+            <div className="relative z-10 flex flex-col justify-center p-8">
               <span className="w-fit border border-[var(--line-strong)] px-2.5 py-1 font-mono text-[11px] text-[var(--muted)]">
-                Personal Idea
+                Personal Project
               </span>
               <h3 className="mt-4 font-display text-2xl font-semibold text-[var(--paper)]">
-                Alert System Application
+                Vengo
               </h3>
               <p className="mt-3 text-[14px] leading-6 text-[var(--muted)]">
                 {/* TODO: replace with the real project brief — what problem it solves
                    and what the client needed. */}
-                Alert Application that works like an alarm and send an alert notification to it's group using a code to join in.
+                Alert Application that works like an alarm and send an alert notification to it's group.
               </p>
               <ul className="mt-5 flex flex-wrap gap-2 font-mono text-[11px] text-[var(--muted)]">
-                {["Prototype", "UI/UX", "Client Project"].map((tag) => (
+                {["Prototype", "UI/UX", "Personal Request"].map((tag) => (
                   <li key={tag} className="border border-[var(--line)] px-2 py-1">
                     {tag}
                   </li>
