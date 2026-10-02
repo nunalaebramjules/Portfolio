@@ -72,21 +72,32 @@ export default function Projects() {
           </div>
 
           {/* Invite-to-add placeholder slots */}
-          {["Adding more Project!", "Adding more Project!"].map((label, i) => (
-            <div
-              key={i}
-              className="flex min-h-[220px] flex-col items-center justify-center border border-dashed border-[var(--line-strong)] p-8 text-center"
-            >
-              <span className="flex h-9 w-9 items-center justify-center border border-[var(--line-strong)] font-mono text-lg text-[var(--muted)]">
-                +
+           <div className="relative z-10 flex flex-col justify-center p-8">
+              <span className="w-fit border border-[var(--line-strong)] px-2.5 py-1 font-mono text-[11px] text-[var(--muted)]">
+                Personal Idea
               </span>
-              <p className="mt-4 font-mono text-[12px] text-[var(--muted)]">{label}</p>
-              <p className="mt-1 max-w-[220px] text-[12px] text-[var(--muted)]/70">
-                Alert Application and Grading System is In Progress.
+              <h3 className="mt-4 font-display text-2xl font-semibold text-[var(--paper)]">
+                Alert System Application
+              </h3>
+              <p className="mt-3 text-[14px] leading-6 text-[var(--muted)]">
+                {/* TODO: replace with the real project brief — what problem it solves
+                   and what the client needed. */}
+                Alert Application that works like an alarm and send an alert notification to it's group.
               </p>
+              <ul className="mt-5 flex flex-wrap gap-2 font-mono text-[11px] text-[var(--muted)]">
+                {["Prototype", "UI/UX", "Client Project"].map((tag) => (
+                  <li key={tag} className="border border-[var(--line)] px-2 py-1">
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+              {/* Uncomment once a live link or case study exists
+              <a href="#" className="mt-6 w-fit font-mono text-[13px] text-[var(--signal)]">
+                View case study
+              </a>
+              */}
             </div>
-          ))}
-        </div>
+          </div>
       </div>
     </section>
   );
